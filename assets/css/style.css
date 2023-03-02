@@ -1,0 +1,32 @@
+:root {
+    --dbC: rgb(40, 40, 54);
+    --lbC: rgb(125, 192, 192);
+
+}
+
+.fire {
+    background-color: var(--dbC);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fire h1 {
+    background-color: var(--lbC);
+    width: 25%;
+    
+}
+.fire h3 {
+    position: relative;
+    color: var(--lbC);
+    text-decoration: underline;
+    margin-left: 1%;
+}
+
+.water {
+    background-color: var(--dbC);
+    border: 1px solid red;
+}
+.water h2 {
+    background-color: var(--lbC);
+    width: 25%;
+}
