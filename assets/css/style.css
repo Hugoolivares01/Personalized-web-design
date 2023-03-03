@@ -24,10 +24,23 @@
 }
 
 .water {
-    background-color: var(--dbC);
+    display: flex;
     border: 1px solid red;
+    height: 35%;
+
+    
 }
 .water h2 {
     background-color: var(--lbC);
     width: 25%;
+    z-index: 1;
+}
+
+.water img { height: 100%;
+    width: 100%;
+}
+
+.wind {
+    display: flex;
+    flex-wrap: wrap;
 }
