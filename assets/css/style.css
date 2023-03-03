@@ -1,6 +1,6 @@
 :root {
-    --dbC: rgb(40, 40, 54);
-    --lbC: rgb(125, 192, 192);
+    --dbC: #31343d;
+    --lbC: #92ceee;
 
 }
 
@@ -15,7 +15,7 @@
     width: 25%;
     
 }
-.fire h3 {
+.fire a {
     position: relative;
     color: var(--lbC);
     text-decoration: underline;
