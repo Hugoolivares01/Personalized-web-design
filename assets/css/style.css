@@ -19,6 +19,7 @@
     position: relative;
     color: var(--lbC);
     text-decoration: underline;
+    font-size: 100%;
     margin-left: 1%;
 }
 
