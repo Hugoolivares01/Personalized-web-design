@@ -4,9 +4,9 @@
 
 
 }
-
+/* contains my the a elements within the nav  */
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 .fire {
@@ -15,27 +15,29 @@ body {
     background-color: var(--dbC);
     height: 10vh;
     width: 100%;
-
+/* this class gave the overall height and width  and color for the nav.
+after then added the wrap element to make the divs that would be placed inside 
+ go next to each other so it would be easier to manage with vw */
 }
 
 .fire :nth-child(1) {
     width: 25vw;
+    /* since having 2 div element within the same depth i opted to 
+    just tagert the 1 child of the .fire class and made the width of
+    25 so that the div would only take 1/4 of the entire nav and the other half 
+    would be saved for the anchor links */
 
 }
 
 .fire h1 {
     display: flex;
     background-color: var(--lbC);
-    width: 25%;
     justify-content: right;
     align-items: center;
     height: 5vh;
-
-
-}
-
-.fire :nth-child(2) {
-    width: 73vw;
+    /* added flex element to adjust the postion of the text.
+    added the back ground color of the text then adjusted the height to 
+    mimic the photo but also making it fit with my longer text */
 }
 
 .fire :nth-child(2) :nth-child(1) {
@@ -43,6 +45,7 @@ body {
     position: absolute;
     right: 30%;
     top: 5vh;
+    
 
 }
 
@@ -66,35 +69,42 @@ body {
     right: 12%;
     top: 5vh;
 }
+/* targeting the individual child elements 1 by one I placed them in the 
+positions i wanted. After looking at it again theres much easier ways to line
+them up and achieve the same effect but for time sake i kept it */
 
 .fire div a {
     color: var(--lbC);
     text-decoration: underline;
     font-size: 100%;
+    /* this was the general changes given to all the links 
+    from color size and decoration */
 }
 
 .water {
-    display: flex;
     height: 50vh;
     width: 100%;
+    /*giving the general dimensions for the image and h2 elements to 
+    move in  */
+    
+}
+.water img {
+    height: 100%;
+    width: 100%;
+    /* giving the dimensions for the image that i import to take on 
+    all the height and width possible for the ocntainer as the h2 will be
+    stacked on top */
 }
 
 .water h2 {
     background-color: var(--lbC);
     width: 20%;
-    z-index: 1;
-    display: flex;
     position: absolute;
     right: 5%;
     bottom: 40%;
-}
-
-.water img {
-    z-index: 0;
-    display: flex;
-    border-width: 100%;
-    height: 100%;
-    width: 100%;
+    /* made the background for the text and adjusted only the box width.
+    then with the absolute properties i was able to place it above the image 
+    and move it to right and from the bottom  certain amounts*/
 }
 
 .rock {
@@ -103,6 +113,13 @@ body {
     display: flex;
     columns: 2;
     height: 25vh;
+    /* added the columns to the sections to seperate the h1 and div 
+    elements from left to right into 2 halfs.
+    then i added the height i wanted for the overall sections 
+    adding flex so that all the elements within each container would 
+    fill up the container form side to side. Finally i added 
+    a top and bottom margin to prevent bleeding from divs into each other 
+    which is repeated with my other sections and divs*/
 }
 
 .rock h1 {
@@ -112,6 +129,11 @@ body {
     border-right: solid;
     justify-content: right;
     align-items: center;
+    /* added the width for the h1 so that i could evenly size it and 
+    give the remainer to the p elements then i colored the text in a dark 
+    blue color and gave it a solid bordered line to the right 
+    . finally with the flex property i was able to center and move the text 
+    to the further right */
 }
 
 .rock div {
@@ -124,6 +146,12 @@ body {
     width: 80%;
     font-size: small;
     color: var(--dbC);
+    /* in the div i added p elements with text changed font size 
+    and color. then i changed the size in which the p elements were allowed to 
+    play with the remained width and the height that the text could fit in 
+    then using th eflex element i was able to position the elements towards
+    the center and finally using the margin left i was able to push the p elements
+    more toward the right */
 }
 
 .wind {
@@ -132,6 +160,11 @@ body {
     margin-bottom: 1vh;
     display: flex;
     columns: 2;
+    /* gave the height for the general space for the elements to play within 
+    maxed out the width 
+    made 2 columns for the section and the h1 elements to be next to each other 
+    then gave it a 1 margin bottom to prevent it from bleeding into the contact or 
+    .lightning classw */
 
 }
 
@@ -143,6 +176,10 @@ body {
     color: var(--dbC);
     border-right: solid;
     border-color: var(--dbC);
+    /* changed the h1's color,font size, and added a right border.
+    gave the the h1 20 percent of the avaible width to have it look 
+    a certain way. then added the flex element and adjusted the postion 
+    of the h1 element fromt the top border and right boreder */
 }
 
 .wind section {
@@ -152,7 +189,30 @@ body {
     align-items: center;
     width: 80%;
     position: relative;
+    /*  centered and gave the images a general contianer for 
+    them to play*/
+    
 
+}
+
+.wind section div a img {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vw;
+    height: 20vh;
+    width: 35vw;
+    /* gave all the images a general size and gave them a margin for them to 
+    space apart from each other then gave them a flex wrap so they would 
+    take up all space from left to right*/
+
+}
+
+.wind section :nth-child(1) a img {
+    height: 30vh;
+    width: 72vw;
+    /* i only overwrote the first one to be bigger to the size i needed
+    so it was double the width of the other images underneath but all accounting
+    for the margin while also rasing the height a significant amount */
 }
 
 .wind section div::before {
@@ -164,25 +224,12 @@ body {
 
 
 }
-
-.wind section div a img {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1vw;
-    height: 20vh;
-    width: 35vw;
-    z-index: -1;
-
-}
-
-
-.wind section :nth-child(1) a img {
-    height: 30vh;
-    width: 72vw;
-}
+/* gave a tint over the pictures giving them a height and width bigger 
+then the pictures so they can be seen outlined  after 
+i placed them over using the position absolute property 
+i then over wrote the general tints for the bigger picture */
 
 .wind section :nth-child(1)::before {
-    content: "";
     position: absolute;
     width: 74vw;
     height: 34vh;
@@ -194,7 +241,8 @@ body {
     width: 10vw;
     height: 10vh;
     position: absolute;
-    z-index: 2;
+    /*  gave the the light blue boxes over the image elements 
+    a size and put them over using the absolute property  */
 }
 
 .wind section :nth-child(2) {
@@ -237,9 +285,23 @@ body {
     align-items: center;
 }
 
+/* again thinking about it now 
+could have been easier done but i opted to individually place 
+each blue boxes previously made into the positions i wanted 
+using display flex giving it a general start with justify and align
+properties and then adjusting the boxes using percentages from bottom
+and right */
+
+
+
+
+
+
+
 .wind section div:hover::before {
     display: none;
-
+/* added this so that when hovering over the 
+images the initial tint it would dissapear */
 }
 
 
@@ -247,7 +309,7 @@ body {
     display: flex;
     columns: 2;
     height: 15vw;
-    width: 100%;
+    /* gave a columns and height for my elements to play in */
 }
 
 .lightning h1 {
@@ -258,22 +320,29 @@ body {
     align-items: center;
     border-right: solid;
     border-color: var(--dbC);
-
+/* gave the text color and gave the element 20 percent of the total width
+after i gave it a right border like the ones before towards the right 
+finally i adjusted the positioning of the elements using the 
+justify and align after the flex */
 
 }
 
 .lightning div {
     display: flex;
-    position: relative;
     width: 80%;
     height: 100%;
-    justify-content: left;
     align-items: center;
+    position: relative;
+    /*  gave th ediv container dimension the i centered it
+ for the elements i placed inside  */
+    
 
 }
 
 .lightning div a {
     margin-left: 10%;
+    /* the links were an acceptable size for me so i just 
+    sperated them with 10% margin */
 }
 
 @media screen and (max-width: 992px) {
@@ -306,7 +375,9 @@ body {
         right: 12%;
         top: 5vh;
     }
-
+/*  only thing that needed to be changed was the positions 
+of the nav links to not stack upon eachother this is when i 
+realized i could have done it easier */
 }
 
 @media screen and (max-width: 768px) {
@@ -341,17 +412,21 @@ body {
         right: 12%;
         top: 5vh;
     }
+    /* redid the positions again */
 }
 
 @media screen and (max-width: 736px) {
     .wind section h2 {
         font-size: small;
+        /*  made the h2 elements smaller to fit on screen  */
     }
 }
 
 @media screen and (max-width: 594px) {
     .fire div h1 {
         font-size: large;
+        /* decreased the size of the h1 text so it wouldnt bleed 
+        out of its light blue box at a smaller screen */
     }
 
     .fire :nth-child(2) :nth-child(1) {
@@ -381,14 +456,12 @@ body {
         position: absolute;
         right: 25%;
         top: 60px;
+        /* readujsted the navs tags once more  */
     }
 
     .water h2 {
         font-size: small;
-    }
-
-    .rock {
-        margin-bottom: 5vh;
+        /* made the text smaller to fit */
     }
 
     .rock h1 {
@@ -455,3 +528,8 @@ body {
         left: 0;
     }
 }
+/* changed all of some of the h elements to fit ont he page added
+different margins for different sizes so that it wouldnt be alot
+of empty space and then i rearanged the contact me links to 
+fit in towardsd the end of this i realized i made much more work for 
+myself */
