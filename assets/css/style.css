@@ -1,7 +1,7 @@
 :root {
     --dbC: #373d4e;
     --lbC: #92ceee;
-    
+
 
 }
 
@@ -15,7 +15,7 @@ body {
     background-color: var(--dbC);
     height: 10vh;
     width: 100%;
-    
+
 }
 
 .fire :nth-child(1) {
@@ -33,6 +33,7 @@ body {
 
 
 }
+
 .fire :nth-child(2) {
     width: 73vw;
 }
@@ -65,6 +66,7 @@ body {
     right: 12%;
     top: 5vh;
 }
+
 .fire div a {
     color: var(--lbC);
     text-decoration: underline;
@@ -84,7 +86,7 @@ body {
     display: flex;
     position: absolute;
     right: 5%;
-    bottom:40%;
+    bottom: 40%;
 }
 
 .water img {
@@ -150,13 +152,13 @@ body {
     align-items: center;
     width: 80%;
     position: relative;
-    
+
 }
 
 .wind section div::before {
     content: "";
     position: absolute;
-    width: 36.5vw ;
+    width: 36.5vw;
     height: 24vh;
     background-color: rgba(75, 166, 226, 0.411);
 
@@ -177,7 +179,8 @@ body {
 .wind section :nth-child(1) a img {
     height: 30vh;
     width: 72vw;
-} 
+}
+
 .wind section :nth-child(1)::before {
     content: "";
     position: absolute;
@@ -185,42 +188,48 @@ body {
     height: 34vh;
 
 }
-.wind section h2  {
+
+.wind section h2 {
     background-color: var(--lbC);
     width: 10vw;
     height: 10vh;
     position: absolute;
     z-index: 2;
 }
-.wind section :nth-child(2){
+
+.wind section :nth-child(2) {
     display: flex;
     bottom: 62%;
     left: 4.2%;
     justify-content: left;
     align-items: center;
 }
-.wind section :nth-child(4){
+
+.wind section :nth-child(4) {
     display: flex;
     bottom: 33%;
     left: 4.2%;
     justify-content: left;
     align-items: center;
 }
-.wind section :nth-child(6){
+
+.wind section :nth-child(6) {
     display: flex;
     bottom: 33%;
     right: 36%;
     justify-content: left;
     align-items: center;
 }
-.wind section :nth-child(8){
+
+.wind section :nth-child(8) {
     display: flex;
     bottom: 3%;
     left: 4.2%;
     justify-content: left;
     align-items: center;
 }
-.wind section :nth-child(10){
+
+.wind section :nth-child(10) {
     display: flex;
     bottom: 3%;
     right: 36%;
@@ -228,7 +237,7 @@ body {
     align-items: center;
 }
 
-.wind section div:hover::before{
+.wind section div:hover::before {
     display: none;
 
 }
@@ -265,4 +274,195 @@ body {
 
 .lightning div a {
     margin-left: 10%;
+}
+
+@media screen and (max-width: 992px) {
+    .fire {
+        background: #fa290e;
+
+    }
+
+    .fire :nth-child(2) :nth-child(1) {
+        width: auto;
+        position: absolute;
+        right: 37%;
+        top: 5vh;
+
+    }
+
+    .fire :nth-child(2) :nth-child(2) {
+        width: auto;
+        position: absolute;
+        right: 31%;
+        top: 5vh;
+    }
+
+    .fire :nth-child(2) :nth-child(3) {
+        width: auto;
+        position: absolute;
+        right: 20%;
+        top: 5vh;
+    }
+
+    .fire :nth-child(2) :nth-child(4) {
+        width: auto;
+        position: absolute;
+        right: 12%;
+        top: 5vh;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .fire {
+        background-color: #bb8588;
+    }
+
+    .fire :nth-child(2) :nth-child(1) {
+        width: auto;
+        position: absolute;
+        right: 43%;
+        top: 5vh;
+
+    }
+
+    .fire :nth-child(2) :nth-child(2) {
+        width: auto;
+        position: absolute;
+        right: 36%;
+        top: 5vh;
+    }
+
+    .fire :nth-child(2) :nth-child(3) {
+        flex-grow: 1;
+        width: auto;
+        position: absolute;
+        right: 22%;
+        top: 5vh;
+
+    }
+
+    .fire :nth-child(2) :nth-child(4) {
+        width: auto;
+        position: absolute;
+        right: 12%;
+        top: 5vh;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .wind section h2 {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 594px) {
+    .fire {
+        background-color: #06f81a;
+    }
+
+    .fire div h1 {
+        font-size: small;
+    }
+
+    .fire :nth-child(2) :nth-child(1) {
+        width: auto;
+        position: absolute;
+        right: 25%;
+        top: 0px;
+
+    }
+
+    .fire :nth-child(2) :nth-child(2) {
+        width: auto;
+        position: absolute;
+        right: 25%;
+        top: 20px;
+    }
+
+    .fire :nth-child(2) :nth-child(3) {
+        width: auto;
+        position: absolute;
+        right: 25%;
+        top: 40px;
+    }
+
+    .fire :nth-child(2) :nth-child(4) {
+        width: auto;
+        position: absolute;
+        right: 25%;
+        top: 60px;
+    }
+
+    .water h2 {
+        font-size: small;
+    }
+
+    .rock {
+        margin-bottom: 0vh;
+    }
+
+    .rock h1 {
+        font-size: small;
+    }
+
+    .rock div p {
+        font-size: smaller;
+    }
+
+    .wind {
+        margin-bottom: 10vh;
+    }
+
+    .wind h1 {
+        font-size: small;
+    }
+
+    .wind section {
+        width: auto;
+
+    }
+
+    .lightning {
+        margin-bottom: 5vh;
+    }
+
+    .lightning h1 {
+        font-size: 10px;
+    }
+
+    .lightning div {
+        font-size: 10px;
+    }
+
+    .lightning div :nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .lightning div :nth-child(2) {
+        position: absolute;
+        top: 15px;
+        left: 0;
+
+    }
+
+    .lightning div :nth-child(3) {
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+    .lightning div :nth-child(4) {
+        position: absolute;
+        top: 45px;
+        left: 0;
+    }
+
+    .lightning div :nth-child(5) {
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
 }
