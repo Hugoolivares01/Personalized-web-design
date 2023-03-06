@@ -277,10 +277,6 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-    .fire {
-        background: #fa290e;
-
-    }
 
     .fire :nth-child(2) :nth-child(1) {
         width: auto;
@@ -314,9 +310,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .fire {
-        background-color: #bb8588;
-    }
 
     .fire :nth-child(2) :nth-child(1) {
         width: auto;
@@ -357,12 +350,8 @@ body {
 }
 
 @media screen and (max-width: 594px) {
-    .fire {
-        background-color: #06f81a;
-    }
-
     .fire div h1 {
-        font-size: small;
+        font-size: large;
     }
 
     .fire :nth-child(2) :nth-child(1) {
@@ -399,7 +388,7 @@ body {
     }
 
     .rock {
-        margin-bottom: 0vh;
+        margin-bottom: 5vh;
     }
 
     .rock h1 {
