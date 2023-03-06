@@ -4,10 +4,13 @@
 
 }
 
+
 .fire {
     background-color: var(--dbC);
     display: flex;
     flex-wrap: wrap;
+    height: 10%;
+    width: 100%;
 }
 
 .fire h1 {
@@ -22,25 +25,36 @@
     font-size: 100%;
     margin-left: 1%;
 }
-
 .water {
-    display: flex;
-    border: 1px solid red;
-    height: 35%;
-
-    
+    height: 20%;
+    width: 100%;
 }
 .water h2 {
     background-color: var(--lbC);
     width: 25%;
     z-index: 1;
 }
-
-.water img { height: 100%;
+.water img { border-width: 100%;
+    height: 200px;
     width: 100%;
 }
 
-.wind {
-    display: flex;
-    flex-wrap: wrap;
+.rock{ 
+    height: 15%;
+    width: 100%
+}
+.wind{ height:35%;
+    width: 100%;
+
+}
+.wind div{ 
+}
+
+.wind div img{
+    height: 5px;
+    width: 10px;
+}
+.lightning {
+    height: 20%;
+    width: 100%;
 }
