@@ -1,6 +1,7 @@
 :root {
     --dbC: #373d4e;
     --lbC: #92ceee;
+    
 
 }
 
@@ -125,6 +126,17 @@ body {
     justify-content: center;
     align-items: center;
     width: 80%;
+    position: relative;
+    
+}
+
+.wind section div::before {
+    content: "";
+    position: absolute;
+    width: 36.5vw ;
+    height: 23vh;
+    background-color: rgba(75, 166, 226, 0.411);
+
 }
 
 .wind section div img {
@@ -133,13 +145,27 @@ body {
     margin: 1vw;
     height: 20vh;
     width: 35vw;
+    z-index: -1;
+
 }
+
 
 .wind section :nth-child(1) img {
     height: 30vh;
     width: 72vw;
-}
+} 
+.wind section :nth-child(1)::before {
+    content: "";
+    position: absolute;
+    width: 74vw;
+    height: 33vh;
+    background-color: rgba(75, 166, 226, 0.411);
 
+}
+.wind section div h2 {
+    background-color: var(--lbC);
+    width: 20%;
+}
 .lightning {
     display: flex;
     columns: 2;
