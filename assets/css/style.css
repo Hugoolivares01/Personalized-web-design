@@ -163,7 +163,7 @@ body {
 
 }
 
-.wind section div img {
+.wind section div a img {
     display: flex;
     flex-wrap: wrap;
     margin: 1vw;
@@ -174,7 +174,7 @@ body {
 }
 
 
-.wind section :nth-child(1) img {
+.wind section :nth-child(1) a img {
     height: 30vh;
     width: 72vw;
 } 
@@ -183,7 +183,6 @@ body {
     position: absolute;
     width: 74vw;
     height: 34vh;
-    background-color: rgba(75, 166, 226, 0.411);
 
 }
 .wind section h2  {
