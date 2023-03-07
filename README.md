@@ -13,26 +13,17 @@ The biggest single issue i learned was making a tint over the element.
 
 ## Usage
 http://127.0.0.1:5501/index.html
-
-    ```md
-    ![alt](assets/images/screenshot%201.png)
-    ```
+![alt text](assets/images/screenshot%201.png)
+  
     hovering over and clicking this image will 
+![alt text](assets/images/screenshot2.png)
 
-        ```md
-    ![alt](assets/images/screenshot2.png)
-    ```
     send you to my other project that ive done in this example being my 
     webpage code update.
+![alt text](assets/images/screenshot3.png)
 
-            ```md
-    ![alt](assets/images/screenshot3.png)
-    ```
     going down to the links at the bottom of the page will give options ways to reach me for example clicking the twitter link
-
-            ```md
-    ![alt](assets/images/screenshot4.png)
-    ```
+![alt text](assets/images/screenshot4.png)
     will bring you to my personal twitter. 
 
 ## Credits
